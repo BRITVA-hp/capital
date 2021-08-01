@@ -1,0 +1,65 @@
+.reviews
+    padding-left: 0
+    padding-right: 0
+    margin-bottom: 100px
+    &__dots
+        &__wrap
+            display: flex
+    &__dot
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        background-color: #C4C4C4
+        margin: 0 8px
+        transition: 0.3s
+        &--active
+            width: 40px
+            background-color: #08A652
+            border-radius: 12px
+    &__arrow
+        cursor: pointer
+        &--inactive
+            path
+                fill: #C4C4C4
+    &__window
+        overflow: hidden
+        padding-top: 55px
+        padding-left: 20px
+        &--mob
+            display: none
+    &__interface
+        margin-bottom: 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-left: 20px
+        padding-right: 20px
+        &--mobile
+            display: none
+            padding-left: 20px
+            padding-right: 20px
+    &__field
+        display: flex
+        justify-content: space-between
+        transition: 0.3s
+    &__title
+        margin-bottom: 60px
+        padding-left: 20px
+    &__card
+        width: 435px
+        height: 600px
+        border: 1px solid #D8E3ED
+        border-radius: 12px
+        padding: 0 45px 34px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &__photo
+            margin: -55px auto 30px auto
+            display: block
+        &__name
+            font-family: 'Alkes-Bold'
+            margin-bottom: 5px
+        &__footer
+            font-size: 16px
+            color: #C8C8C8

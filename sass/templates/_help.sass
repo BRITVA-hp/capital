@@ -1,0 +1,43 @@
+.help
+    background-color: #F0F3F6
+    padding-top: 175px
+    padding-bottom: 175px
+    position: relative
+    background-image: url(../img/help/img.png)
+    background-repeat: no-repeat
+    background-position-x: left
+    background-position-y: center
+    background-size: contain
+    &__img
+        position: absolute
+        top: 0
+        right: 0
+    &__title
+        margin-bottom: 70px
+    &__box
+        max-width: 770px
+        margin-left: auto
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        flex-basis: 45%
+        justify-content: flex-start
+        align-items: flex-start
+        &:nth-child(-n+2)
+            padding-bottom: 24px
+            margin-bottom: 11px
+            border-bottom: 1px solid #E7E7E7
+    &__text
+        line-height: 130%
+    &__marker
+        padding-top: 8px
+        margin-right: 20px
+        &__inner
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            background-color: #08A652
+            img
+                display: none

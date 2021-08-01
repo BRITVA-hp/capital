@@ -1,0 +1,141 @@
+.modal
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 199
+    left: 0
+    top: 
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(#212121, 0.6)
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.3s
+    &--visible
+        opacity: 1
+        visibility: visible
+    &__title
+        max-width: 200px
+    &__button
+        padding: 18px 46px
+    &__form
+        background: linear-gradient(101.94deg, rgba(255, 255, 255, 0.6) 26.27%, rgba(255, 255, 255, 0.25) 79.44%)
+        border: 1px solid #FFFFFF
+        backdrop-filter: blur(35px)
+        border-radius: 20px
+        padding: 150px 40px 0
+        position: relative
+        width: 400px
+        &__close
+            position: absolute
+            top: 40px
+            right: 40px
+            color: #B4B4B4
+            text-decoration: underline
+            cursor: pointer
+    &__input-group
+        margin-bottom: 25px
+    &__input
+        background: #FFFFFF
+        border: 1px solid #C8C8C8
+        box-sizing: border-box
+        border-radius: 6px
+        color: #C4C4C4
+        font-size: 16px
+        line-height: 120%
+        padding: 18px 20px
+        display: block
+        width: 100%
+        &:focus
+            outline: none
+    &__label
+        cursor: pointer
+        font-size: 12px
+        position: relative
+        margin-bottom: 22px
+        display: block
+        &__text
+            display: block
+            padding-left: 40px
+    &__ok
+        display: block
+        width: 24px
+        height: 24px
+        border: 1px solid #08A652
+        background-repeat: no-repeat
+        background-position: center
+        position: absolute
+        left: 0
+        top: 5px
+    &__check
+        display: none
+        &:checked + .modal__ok
+            background-color: #08A652
+            background-image: url(../img/modal/ok.png)
+            
+    &__img
+        position: absolute
+        &--1
+            top: 120px
+            left: 43%
+        &--2
+            right: 0
+            bottom: 0
+    &__dialog
+        background-color: #F0F3F6
+        padding: 34px 50px 40px 70px
+        width: 900px
+        height: 600px
+        position: relative
+        display: flex
+        justify-content: space-between
+    &__box
+        max-width: 350px
+        padding-top: 100px
+    &__title
+        font-size: 48px
+        line-height: 110%
+        color: #08A652
+        margin-bottom: 15px
+        &--mobile
+            display: none
+    &__text
+        font-size: 16px
+        &--mobile
+            display: none
+
+    &__success
+            opacity: 0
+            visibility: hidden
+            position: fixed
+            z-index: 199
+            left: 0
+            top: 
+            bottom: 0
+            right: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(#212121, 0.6)
+            display: flex
+            align-items: center
+            justify-content: center
+            &--visible
+                opacity: 1
+                visibility: visible
+            &__dialog
+                background-color: #F0F3F6
+                padding: 210px 70px 0
+                width: 450px
+                height: 600px
+                text-align: center
+            &__title
+                font-size: 48px
+                line-height: 100%
+                font-family: 'Alkes-800'
+                margin-bottom: 28px
+                color: #08A652
+            &__text
+                font-size: 16px

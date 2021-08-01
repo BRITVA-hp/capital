@@ -1,0 +1,40 @@
+.faq
+    padding-top: 110px
+    padding-bottom: 110px
+    &__container
+        background-image: url(../img/faq/img.png)
+        background-repeat: no-repeat
+        background-position-x: left
+        background-position-y: center
+        background-size: 400px
+    &__box
+        max-width: 920px
+        margin-left: auto
+    &__title
+        margin-bottom: 90px
+    &__item
+        overflow: hidden
+        margin-bottom: 10px
+        &:last-of-type
+            margin-bottom: 0
+        &--active
+            .faq__item__title
+                background-color: #08A652
+                color: #ffffff
+            .faq__item__text
+                height: auto
+                padding-top: 25px
+                padding-bottom: 25px
+        &__title
+            font-family: 'Alkes-Bold'
+            line-height: 130%
+            padding: 25px
+            border-radius: 12px
+            background-color: #F0F3F6
+            cursor: pointer
+            transition: 0.3s
+        &__text
+            height: 0
+            padding-left: 25px
+            padding-right: 25px
+            transition: 0.3s
